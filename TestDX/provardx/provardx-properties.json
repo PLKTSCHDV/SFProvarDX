@@ -1,0 +1,27 @@
+{
+   "provarHome":"C:/Program Files/Provar/",
+   "projectPath":"C:/Users/pulkit.sachdeva/Provar/Workspace1/DX practice/TestDX",
+   "resultsPath":"C:/Users/pulkit.sachdeva/Provar/Workspace1/DX practice/TestDX/provardx/Results",
+   "smtpPath": "",
+   "resultsPathDisposition": "Increment", 
+   "testOutputLevel":"BASIC",
+   "pluginOutputlevel":"WARNING",
+   "stopOnError":false,
+   "lightningMode":true,
+   "connectionRefreshType":"Reload",
+   "metadata":{
+      "metadataLevel":"Reuse",
+      "cachePath":"../.provarCaches"
+   },
+   "environment":{
+      "testEnvironment":"",
+      "webBrowser":"Chrome",
+      "webBrowserConfig":"Full Screen",
+      "webBrowserProviderName":"Desktop",
+      "webBrowserDeviceName":"Full Screen"
+   }
+   ,"testCase":[
+    	"/Test Case 1.testcase"  
+	]
+   ,"emailProperties":{"sendEmail": "false", "primaryRecipients": "", "ccRecipients": "", "bccRecipients": "", "emailSubject": "Provar test run report", "attachExecutionReport": "false", "attachZip": "false"}
+}
