@@ -3,6 +3,9 @@
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="e3248295-5cd0-47a7-8a85-b4504a4bb429" name="SetValues" testItemId="6" title="Set Values: Accname">
+      <associations>
+        <association assocationType="TM.TEST_STEP" connectionId="4e662fa3-d243-42a7-961c-e532369e2f99" entityKey="a0jJ70000004G4DIAU"/>
+      </associations>
       <arguments>
         <argument id="values">
           <value class="valueList" mutable="Mutable">
@@ -22,6 +25,9 @@
       </arguments>
     </apiCall>
     <apiCall apiId="com.provar.plugins.bundled.apis.AssertValues" guid="5890d9c0-2ad4-43a0-9a55-6b47ddc62cfd" name="AssertValues" testItemId="1" title="Assert: True EqualTo True">
+      <associations>
+        <association assocationType="TM.TEST_STEP" connectionId="4e662fa3-d243-42a7-961c-e532369e2f99" entityKey="a0jJ70000004G4EIAU"/>
+      </associations>
       <arguments>
         <argument id="expectedValue">
           <value class="value" valueClass="string">True</value>
@@ -54,6 +60,9 @@
       </arguments>
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="e17613f7-4a53-4398-b65d-33495038eab1" name="ApexConnect" testItemId="2" title="Salesforce Connect: ApexConnection (Test)">
+      <associations>
+        <association assocationType="TM.TEST_STEP" connectionId="4e662fa3-d243-42a7-961c-e532369e2f99" entityKey="a0jJ70000004G4FIAU"/>
+      </associations>
       <arguments>
         <argument id="connectionName">
           <value class="value" valueClass="string">MyPersonalSF</value>
@@ -98,6 +107,9 @@
       </arguments>
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="54bd2866-43f1-450a-88d8-77955a752804" name="UiWithScreen" testItemId="3" title="On SF Account Home screen">
+      <associations>
+        <association assocationType="TM.TEST_STEP" connectionId="4e662fa3-d243-42a7-961c-e532369e2f99" entityKey="a0jJ70000004G4GIAU"/>
+      </associations>
       <arguments>
         <argument id="uiConnectionName">
           <value class="value" valueClass="string">ApexConnection</value>
@@ -129,6 +141,9 @@
         <clause name="substeps" testItemId="4">
           <steps>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="6b714ca2-b074-4241-a1f6-a159b88f7d81" name="UiDoAction" testItemId="5" title="Click the New button">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="4e662fa3-d243-42a7-961c-e532369e2f99" entityKey="a0jJ70000004G4IIAU"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DAccount%26action%3DNew&amp;name=New"/>
@@ -187,6 +202,9 @@
       </clauses>
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="85ee29ca-d5d5-4ca9-86cd-5cc3d8ed13f8" name="UiWithScreen" testItemId="7" title="On SF Account New screen">
+      <associations>
+        <association assocationType="TM.TEST_STEP" connectionId="4e662fa3-d243-42a7-961c-e532369e2f99" entityKey="a0jJ70000004G4HIAU"/>
+      </associations>
       <arguments>
         <argument id="uiConnectionName">
           <value class="value" valueClass="string">ApexConnection</value>
@@ -224,6 +242,9 @@
         <clause name="substeps" testItemId="8">
           <steps>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="215aa439-edec-4579-8571-81e4af0aab9c" name="UiDoAction" testItemId="9" title="Set the Account Name field to {Accname}">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="4e662fa3-d243-42a7-961c-e532369e2f99" entityKey="a0jJ70000004G4JIAU"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DAccount%26field%3DName&amp;name=Name"/>
@@ -284,6 +305,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="0a68ff03-51da-4e27-a110-49b2cc8da0e6" name="UiDoAction" testItemId="10" title="Click the Save button">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="4e662fa3-d243-42a7-961c-e532369e2f99" entityKey="a0jJ70000004G4KIAU"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DAccount%26action%3Dsave&amp;name=save"/>
@@ -363,4 +387,7 @@
       </generatedParameters>
     </apiCall>
   </steps>
+  <associations>
+    <association assocationType="TM.TEST_CASE" connectionId="4e662fa3-d243-42a7-961c-e532369e2f99" entityKey="a0TJ70000008YkOMAU" lastUploadedDateTime="2024-11-06T14:02:30Z"/>
+  </associations>
 </testCase>
